@@ -7,7 +7,7 @@ export const Statistics = ({ good, neutral, bad }) => {
         return (
           <ListOfSpansItem key={[key]}>
             <Span>
-              {key}:{value}
+              {key}: {value}
             </Span>
           </ListOfSpansItem>
         );
