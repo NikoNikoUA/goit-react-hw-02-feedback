@@ -1,11 +1,11 @@
-import { ListOfSpans, ListOfSpansItem, Span } from './SpanList.styled';
+import { ListOfSpans, ListOfSpansItem, Span } from './Statistics.styled';
 
-export const SpanList = ({ good, neutral, bad }) => {
+export const Statistics = ({ good, neutral, bad }) => {
   return (
     <ListOfSpans>
       {Object.entries({ good, neutral, bad }).map(([key, value]) => {
         return (
-          <ListOfSpansItem>
+          <ListOfSpansItem key={[key]}>
             <Span>
               {key}:{value}
             </Span>
