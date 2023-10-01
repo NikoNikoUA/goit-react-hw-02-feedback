@@ -21,7 +21,7 @@ export const Statistics = ({
           return (
             <ListOfSpansItem key={key}>
               <Span>
-                {key}: {value}
+                <Span> {key}:</Span> <Span>{value}</Span>
               </Span>
             </ListOfSpansItem>
           );
