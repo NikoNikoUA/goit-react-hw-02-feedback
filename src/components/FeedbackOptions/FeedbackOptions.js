@@ -1,6 +1,6 @@
 import { BtnItemsList, BtnItem, Btn } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ options, onLeavingFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <BtnItemsList>
       {options.map(option => {
@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ options, onLeavingFeedback }) => {
           <BtnItem key={option}>
             <Btn
               type="button"
-              onClick={() => onLeavingFeedback(option)}
+              onClick={() => onLeaveFeedback(option)}
               name={option}
             >
               {option}
